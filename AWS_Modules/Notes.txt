@@ -1,0 +1,14 @@
+Done:
+-add outputs to Dev and UAT s3 backend.
+-modulize dev bamboo instance.
+-read remote state file - C:\Git\AWS_Workspace\Prod\Global\DirectConnect\VirtualInterface
+-generate output content - C:\Git\AWS_Modules\Modules\VPC\VPC_4SN_Private\outputs.tf
+                           C:\Git\AWS_Workspace\Prod\Global\VPC\VPC\outputs.tf
+
+To Do
+-add outputs to other s3 backends.
+-add outputs to other components.
+-modulize everything.
+-change Route 53 from per environment to per domain.
+--
+-add Example and Test code.

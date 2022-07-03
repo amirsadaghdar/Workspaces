@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::054669460988:user/${user_name}"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:eu-west-1:054669460988:accesspoint/${access_point}/object/*"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+              "AWS": "arn:aws:iam::054669460988:user/${user_name}"
+            },
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:eu-west-1:054669460988:accesspoint/${access_point}"
+        }
+        
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+    {
+      "Effect": "Deny",
+      "NotPrincipal": {
+        "AWS": [
+          "arn:aws:iam::${account_id}:user/${netapp_username}",
+          "arn:aws:iam::${account_id}:root"
+        ]
+      },
+      "Action": "s3:DeleteObject",
+      "Resource": [
+        "arn:aws:s3:::${bucket_name}",
+        "arn:aws:s3:::${bucket_name}/*"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+To run the cli command in the module, use "aws configure" and login to the relevant AWS account.
